@@ -1,7 +1,11 @@
 import React from 'react';
 import GitHubCalendar from 'react-github-calendar';
 
-const GitHubContributions = ({ username }) => {
+interface GitHubContributionsProps {
+  username: string,
+}
+
+const GitHubContributions: React.FC<GitHubContributionsProps> = ({ username }) => {
   return (
     <div className="github_contributions">
       <div className="container mx-auto p-8">
